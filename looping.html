@@ -1,0 +1,77 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Looping Nilai</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<script language="javascript">
+
+			function test ()
+			{
+				var a=document.kirim.T1.value
+				var b=document.kirim.T2.value
+
+				var val1=parseInt(a)
+				var val2=parseInt(b)
+				var angka;
+
+				if(val2>val1){
+					for(angka = val1 ; angka <= val2; angka++){
+
+					// var y = document.getElementById("benar").value;
+
+					// document.getElementById("demo").innerHTML = (angka+ " ");
+
+						document.write(angka+ " ");
+						}
+				}
+				else{
+
+					var y = document.getElementById("salah").value;
+
+					document.getElementById("aksi").innerHTML = y;
+					// alert("Harap masukan angka lebih besar dari batasan nilai looping");
+					kirim.reset();
+				}
+			}
+		</script>
+	<body>
+		<div class="looping">
+			<img src="image/9.png" alt="" class="profile">
+			<h1>Aritmatich</h1>
+
+			<form action="" name="kirim">
+
+				<p>Input Angka</p>
+				<i class="fa fa-user" aria-hidden="true"><input type="text" name="T1" placeholder="Angka"></i>
+
+				<p>Batas Angka Looping</p>
+				<i class="fa-lock" aria-hidden="true"><input type="text" name="T2" placeholder="Batas Looping"></i>
+
+				<input type="hidden" id="salah" value="Nilai Akhir Harus Lebih Besar Dari Nilai Awal">
+				<p id="aksi"></p>
+				<p id="demo"></p>
+
+				<input type="button" onclick=test() value="Aritmatich" class="button">
+
+				<a href="../login/login.html">Login</a><br>
+				<a href="../Aritmatika/aritmatika.html">Operator Aritmatika</a>
+			</form>
+		</div>
+		<!-- <form method="post" name="kirim">
+			<table>	
+				<tr>
+					<td>masukan nilai looping</td>
+					<td><input type="text" name="T1"></td>
+				</tr>
+				<tr>
+					<td>masukan batasan nilai looping</td>
+					<td><input type="text" name="T2"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="button1" value="Looping" onclick=test()></td>
+				</tr>
+			</table>
+		</form> -->
+	</body>
+</html>
